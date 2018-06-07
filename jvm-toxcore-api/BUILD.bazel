@@ -7,9 +7,6 @@ scala_library(
         "src/main/java/**/*.scala",
     ]),
     visibility = ["//visibility:public"],
-    deps = [
-        "@com_intellij_annotations//jar",
-    ],
 )
 
 scala_test(
