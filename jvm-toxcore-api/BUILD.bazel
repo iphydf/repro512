@@ -17,7 +17,6 @@ scala_test(
     ]),
     deps = [
         ":jvm-toxcore-api",
-        "@org_scalacheck_scalacheck//jar",
-        "@org_scalactic_scalactic//jar:file",
+        "@org_scalacheck_scalacheck//jar:file",
     ],
 )

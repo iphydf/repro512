@@ -9,12 +9,6 @@ maven_jar(
     sha1 = "7845816647d5a80d30e5a71862b31f3fee894549",
 )
 
-maven_jar(
-    name = "org_scalactic_scalactic",
-    artifact = "org.scalactic:scalactic_2.11:2.2.6",
-    sha1 = "f7307ba050244832ae5751b221493cb923942984",
-)
-
 # Scala toolchain
 # =========================================================
 
