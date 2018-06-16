@@ -1,5 +1,3 @@
-package im.tox.core
-
 import org.scalatest.FunSuite
 import org.scalatest.prop.PropertyChecks
 
