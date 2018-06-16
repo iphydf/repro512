@@ -1,5 +1,3 @@
-import %workspace%/tools/bazelrc/config/common
-import %workspace%/tools/bazelrc/config/linux
-import %workspace%/tools/bazelrc/config/clang
+test --test_output=errors
 
 # vim:ft=sh

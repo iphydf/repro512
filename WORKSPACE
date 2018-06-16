@@ -12,21 +12,18 @@ maven_jar(
 # Scala toolchain
 # =========================================================
 
-RULES_SCALA_VERSION = "eeee4679d07eed3a12666361aecbc556047a4f17"
+RULES_SCALA_VERSION = "master"
 
 http_archive(
     name = "io_bazel_rules_scala",
-    #sha256 = "351f8838716733ae2f3cfb561fa46b9882d47dec7ced780d47f612f7cfb3ef24",
+    sha256 = "48c9e1fc6f3dbc58d0971bb7abb104a8f129e69ab0fd2892f67ac2fe5e2c2339",
     strip_prefix = "rules_scala-%s" % RULES_SCALA_VERSION,
     urls = ["https://github.com/bazelbuild/rules_scala/archive/%s.zip" % RULES_SCALA_VERSION],
 )
 
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
 load("@io_bazel_rules_scala//scala:toolchains.bzl", "scala_register_toolchains")
-load("@io_bazel_rules_scala//scala_proto:scala_proto.bzl", "scala_proto_repositories")
 
 scala_register_toolchains()
 
 scala_repositories()
-
-scala_proto_repositories()
